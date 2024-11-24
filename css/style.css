@@ -1,0 +1,206 @@
+body{
+    background-color: #0a0c0a;
+    margin: 0;
+    height: 100vh;
+}
+
+.banner{
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+.nav{
+    margin: 0;
+    width: 100%;
+    height: 4rem;
+    /*background: rgb(96,185,75);
+    background: radial-gradient(circle, rgba(96,185,75,1) 0%, rgba(207,214,49,1) 48%, rgba(0,158,66,1) 100%);*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.neon-bar{
+    width: 20rem;
+    height:3px;
+    background: linear-gradient(to right, rgba(247,21,0,1) 0%, rgba(255,64,64,1) 9%, rgba(255,199,199,1) 22%, rgba(255,253,240,1) 50%, rgba(255,199,199,1) 78%, rgba(255,64,64,1) 91%, rgba(247,21,0,1) 100%);
+    box-shadow: 0px 0px 20px 8px rgba(247,21,0,1);
+}
+
+.nav a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Delicious Handrawn", cursive;
+    font-size: 2rem;
+}
+
+.nav a:hover{
+    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+}
+
+.active{
+    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+
+}
+
+
+h1{
+    font-family: "Delicious Handrawn", cursive;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #1eff00 , 0 0 70px #1eff00 , 0 0 80px #1eff00 , 0 0 100px #1eff00 ;
+}
+
+.main{
+    margin: 0;
+    padding: 3rem;
+}
+
+.container{
+    height: auto;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    border-radius: 1rem;
+    box-shadow: 0px 0px 5px white;
+    width: 15rem;
+    text-align: center;
+    font-size: 16px;
+    background: black;
+    transition: 1.5s ease;
+    transform-style: preserve-3d;
+}
+
+.front img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.card:hover {
+    transform: rotateY(.5turn);
+}
+
+/* Content */
+.card .content {
+    transform-style: preserve-3d;
+  
+    transition: 1s ease;
+  
+}
+
+.card .back, .card .front {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.card {
+  text-shadow: 0 0 5px black;
+}
+
+.card .back {
+    transform: rotateY(.5turn);
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.card p,
+.card h2 {
+    transform: translateZ(75px);
+}
+
+.card p {
+    font-size: 1em;
+}
+
+.card h2 {
+    margin-top: 50%;
+    font-size: 1rem;
+}
+
+.card::before,
+.card::after{
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  transform: rotateY(.5turn) translateZ(1px);
+
+}
+
+.card::before {
+  transform: none;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+h2{
+    font-family: "Fira Code", serif;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
+
+p{
+    font-family: "Fira Code", serif;
+    font-size: small;
+    color: white;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:3rem;
+    padding-bottom: 3rem;
+    border: none;
+    height: 5rem;
+}
+
+.button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 5rem;
+}
+
+.button:hover{
+    box-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #1eff00 , 0 0 70px #1eff00 , 0 0 80px #1eff00 , 0 0 100px #1eff00;
+}
+
+h3{
+    font-family: "Orbitron", sans-serif;
+    font-size: 2rem;
+    color: white;
+
+}
+
+svg{
+    color: white;
+    
+}
+
