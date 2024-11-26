@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick & Morty API</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=DM+Serif+Text&family=Delicious+Handrawn&family=Fira+Code:wght@300&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="banner">
+        <h1>The Rick & Morty API</h1>
+    </section>
+    
+
+    <div>
+        <nav class="nav">
+            <div class="neon-bar"></div>
+            <a href="personajes.html">Personajes</a>
+            <a href="episodios.html" class="active">Episodios</a>
+            <div class="neon-bar"></div>
+        </nav>
+    </div>
+
+    
+
+    <main>
+        <div class="container" id="container">
+
+            <div class="card-content">
+
+                    
+            </div>
+
+        </div>
+
+        <div class="buttons">
+            <button id="previous" class="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-badge-left">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M11 17h6l-4 -5l4 -5h-6l-4 5z" />
+                </svg>
+            </button>
+            
+            <div class="page-number">
+                <h3 id="page-number"></h3>
+            </div>
+            <button id="next" class="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-badge-right">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M13 7h-6l4 5l-4 5h6l4 -5z" />
+                </svg>
+            </button>
+        </div>
+    </main>
+
+    <script src="js/app-episodios.js"></script>
+</body>
+</html>
